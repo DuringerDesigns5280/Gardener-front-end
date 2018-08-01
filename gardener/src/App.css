@@ -31,6 +31,11 @@ margin-left: 90vw;
 margin-right: 2vw;
 }
 
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
 .pages {
   display: flex;
   flex-direction: row;

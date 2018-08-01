@@ -6,7 +6,7 @@ class Header extends Component {
       <div className='header'>
         <div className='logo'>Gardener</div>
         <nav className='navBar'></nav>
-        <div className='logIn'><a href='/login'>Log In</a></div> 
+        <div className='logIn'><a href='/login'>Create A Card</a></div> 
           <ul className='pages'>
               <li><a href='/'>Home</a></li>
               <li><a href='/gardens'>Plants</a></li>

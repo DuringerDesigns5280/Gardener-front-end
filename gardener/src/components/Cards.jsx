@@ -2,7 +2,14 @@ import React, {Component} from 'react'
 import { Button } from 'semantic-ui-react'
 import { Card, Icon, Image } from 'semantic-ui-react'
 
-const CardExampleCard = (props) => (
+const Cards = (props) => {
+  const plant = {
+    name: props.Name,
+    description: props.Description,
+    imgUrl: props.Image
+  }
+
+  return (
   <Card id='card'>
     <Image id="imgPic" src={props.Image} />
     <Card.Content>
@@ -11,9 +18,10 @@ const CardExampleCard = (props) => (
       <Card.Description>{props.Description}</Card.Description>
     </Card.Content>
     <Card.Content extra>
-    <Button onClick={props.logClick}  positive>Add To Garden</Button>
+    <Button onClick={(event) => props.addToGarden(event, plant)} positive>Add To Garden</Button>
     </Card.Content>
   </Card>
-)
+  )
+}
 
-export default CardExampleCard
+export default Cards
